@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CGMath"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "A collection of functions for CGGeometry types."
 
 # This description is used to generate tags and improve search results.
@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+	CGMath is a collection of functions to manipulate CGGeometry types.
+	These functions include functions like initializers (e.g. CGRectMakeWithCenterAndSize), lerp functions and other utilities.
                        DESC
 
   s.homepage         = "https://github.com/EmilioPelaez/CGMath"
