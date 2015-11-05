@@ -58,6 +58,15 @@ CGPoint CGPointLerp(CGPoint v0, CGPoint v1, CGFloat t){
 
 #pragma mark - CGSize
 
+CGSize CGSizeMakeWithAspectRatioThatFitsSize(CGFloat ratio, CGSize size){
+	CGFloat sizeRatio = CGSizeGetAspectRatio(size);
+	if(ratio > sizeRatio){
+		return CGSizeMake(size.width, size.width / ratio);
+	}else{
+		return CGSizeMake(size.height * ratio, size.height);
+	}
+}
+
 CGSize CGSizeLerp(CGSize v0, CGSize v1, CGFloat t){
 	CGFloat width = lerp(v0.width, v1.width, t);
 	CGFloat height = lerp(v0.height, v1.height, t);
@@ -66,6 +75,18 @@ CGSize CGSizeLerp(CGSize v0, CGSize v1, CGFloat t){
 }
 
 #pragma mark - CGRect
+
+CGRect CGRectMakeWithRectAndAspectRatio(CGRect rect, CGFloat ratio){
+	CGPoint center = CGRectGetCenter(rect);
+	CGSize size = CGSizeMakeWithAspectRatioThatFitsSize(ratio, rect.size);
+	
+	return CGRectMakeWithCenterAndSize(center, size);
+}
+
+CGRect CGRectMakeWithRectAndAspectRatioFromRect(CGRect rect, CGRect rectForRatio){
+	CGFloat ratio = CGSizeGetAspectRatio(rectForRatio.size);
+	return CGRectMakeWithRectAndAspectRatio(rect, ratio);
+}
 
 CGRect CGRectLerp(CGRect v0, CGRect v1, CGFloat t){
 	CGPoint origin = CGPointLerp(v0.origin, v1.origin, t);

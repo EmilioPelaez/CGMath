@@ -1,0 +1,14 @@
+PODS:
+  - CGMath (0.1.0)
+
+DEPENDENCIES:
+  - CGMath (from `../`)
+
+EXTERNAL SOURCES:
+  CGMath:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CGMath: fcdd89a7b9accc0ce7aaa91a60a46e5220a66dce
+
+COCOAPODS: 0.39.0
