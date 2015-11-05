@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CGMath"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A collection of functions for CGGeometry types."
 
 # This description is used to generate tags and improve search results.
@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/CGMath"
+  s.homepage         = "https://github.com/EmilioPelaez/CGMath"
   s.license          = 'MIT'
   s.author           = { "Emilio Peláez" => "i.am@emiliopelaez.me" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/CGMath.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/EmilioPelaez/CGMath.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/EmilioPelaez'
 
   s.platform     = :ios, '7.0'
