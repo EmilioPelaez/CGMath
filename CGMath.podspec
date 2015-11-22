@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CGMath"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A collection of functions for CGGeometry types."
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/EmilioPelaez/CGMath.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/EmilioPelaez'
 
-  s.platform     = :ios, '7.0'
+  s.ios.deployment_target  = '7.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -36,5 +37,5 @@ Pod::Spec.new do |s|
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  s.frameworks = 'CoreGraphics', 'UIKit'
 end
