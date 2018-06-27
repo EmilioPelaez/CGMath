@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CGMath'
   s.version          = '0.9.0'
-  s.summary          = 'A short description of CGMath.'
+  s.summary          = 'CGMath is a collection of extensions and functions around CGGeometry types, like CGPoint, CGSize, CGRect and CGVector. It includes some other functions for FloatingPoint types, as well as Comparable.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
