@@ -207,8 +207,8 @@
 		A02A9977C27471315E0034BD2B5E15AE /* CGMath */ = {
 			isa = PBXGroup;
 			children = (
-				C88BB0E120E33A1D009C425F /* FloatingPoint.swift */,
 				C88BB0E720E33BD5009C425F /* Comparable.swift */,
+				C88BB0E120E33A1D009C425F /* FloatingPoint.swift */,
 				C88BB0DD20E32C52009C425F /* DoubleListRepresentable.swift */,
 				C88BB0DF20E3346A009C425F /* CGGeometry.swift */,
 				C88BB0ED20E33D1B009C425F /* CGPoint.swift */,

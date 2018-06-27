@@ -16,7 +16,7 @@ public func inverseLerp<T: FloatingPoint>(start: T, end: T, value: T) -> T {
 }
 
 extension FloatingPoint {
-	public func clamp(min: Self, max: Self) -> Self {
+	public func clamp(min: Self = 0, max: Self = 1) -> Self {
 		return CGMath.clamp(value: self, min: min, max: max)
 	}
 	
