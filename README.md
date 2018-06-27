@@ -16,6 +16,8 @@ This method can take a `progress` value outside the `[0, 1]` range, this can be 
 
 `inverseLerp` is the opposite of `lerp`. Given three values, `start`, `end` and a `value` (usually in the `[start, end]` range), it will return a `progress` value such that using it in `lerp` with the same `start` and `end` values, it will return `value`. For example, `lerp(start: 5, end: 15, value: 10)` will return `0.5`, since `10` is right between `5` and `15`.
 
+`remap` takes to ranges and converts the value from one range to another. For example, if you have a few values in the `[20, 40]` range and you want them in the `[50, 100]` range, you would call `value.remap(from: (20, 40), to: (50, 100))`. `20` would become `50`, `40` would become `100` and `30` would become `75`. 
+
 ### CGGeometry and DoubleListRepresentable
 The four `CGGeometry` types `CGPoint`, `CGSize`, `CGRect` and `CGVector` conform to  the protocols in `DoubleListRepresentable`. This means that they can be initialized and converted to a list of doubles. In the case of `CGRect`, this list is exactly four elements long, in all other cases the list should have exactly two elements.
 
