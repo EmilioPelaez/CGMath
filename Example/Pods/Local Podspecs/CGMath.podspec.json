@@ -2,24 +2,21 @@
   "name": "CGMath",
   "version": "0.1.0",
   "summary": "A short description of CGMath.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/CGMath",
-  "license": "MIT",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/EmilioPelaez/CGMath",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
-    "Emilio Peláez": "i.am@emiliopelaez.me"
+    "EmilioPelaez": "i.am@emiliopelaez.me"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/CGMath.git",
+    "git": "https://github.com/EmilioPelaez/CGMath.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
-  "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "CGMath": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "CGMath/Classes/**/*"
 }

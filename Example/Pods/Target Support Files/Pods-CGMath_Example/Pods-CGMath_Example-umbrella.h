@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CGMath_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CGMath_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_CGMath_ExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CGMath_ExampleVersionString[];
 

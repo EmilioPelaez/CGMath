@@ -1,11 +1,11 @@
 # CGMath
 
-[![CI Status](http://img.shields.io/travis/Emilio Peláez/CGMath.svg?style=flat)](https://travis-ci.org/Emilio Peláez/CGMath)
-[![Version](https://img.shields.io/cocoapods/v/CGMath.svg?style=flat)](http://cocoapods.org/pods/CGMath)
-[![License](https://img.shields.io/cocoapods/l/CGMath.svg?style=flat)](http://cocoapods.org/pods/CGMath)
-[![Platform](https://img.shields.io/cocoapods/p/CGMath.svg?style=flat)](http://cocoapods.org/pods/CGMath)
+[![CI Status](https://img.shields.io/travis/EmilioPelaez/CGMath.svg?style=flat)](https://travis-ci.org/EmilioPelaez/CGMath)
+[![Version](https://img.shields.io/cocoapods/v/CGMath.svg?style=flat)](https://cocoapods.org/pods/CGMath)
+[![License](https://img.shields.io/cocoapods/l/CGMath.svg?style=flat)](https://cocoapods.org/pods/CGMath)
+[![Platform](https://img.shields.io/cocoapods/p/CGMath.svg?style=flat)](https://cocoapods.org/pods/CGMath)
 
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -13,16 +13,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-CGMath is available through [CocoaPods](http://cocoapods.org). To install
+CGMath is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CGMath"
+pod 'CGMath'
 ```
 
 ## Author
 
-Emilio Peláez, i.am@emiliopelaez.me
+EmilioPelaez, i.am@emiliopelaez.me
 
 ## License
 

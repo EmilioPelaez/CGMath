@@ -1,9 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+target 'CGMath_Example' do
+  pod 'CGMath', :path => '../'
 
-target 'CGMath_Tests', :exclusive => true do
-  pod "CGMath", :path => "../"
+  target 'CGMath_Tests' do
+    inherit! :search_paths
 
-  
+    
+  end
 end

@@ -6,9 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   CGMath:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  CGMath: fcdd89a7b9accc0ce7aaa91a60a46e5220a66dce
+  CGMath: fad041cc45817fbcbea5b0087b6949ace0fff85b
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 89201bb8804b64c182d455c6a609ec8d8862e1c2
+
+COCOAPODS: 1.5.3
