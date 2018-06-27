@@ -18,7 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+CGMath is a collection of extensions and functions around CGGeometry types, like CGPoint, CGSize, CGRect and CGVector. It includes some other functions for FloatingPoint types, as well as Comparable.
+
+For CGGeometry types it includes several convenience initializers as well as some useful variables, like variables to convert a size to a point, or to get the aspect ratio of a size.
+
+For CGGeometry types and FloatingPoint types it includes the linear interpolation (lerp) function.
+
+For FloatingPoint types it also has inverseLerp, clamp and remap.
+
+To learn more about these functions, open the README.md file.
                        DESC
 
   s.homepage         = 'https://github.com/EmilioPelaez/CGMath'
@@ -31,12 +39,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'CGMath/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CGMath' => ['CGMath/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+	
+  s.frameworks = 'CoreGraphics'
 end
