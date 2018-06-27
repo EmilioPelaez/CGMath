@@ -2,7 +2,7 @@
 
 ## About
 
-CGMath is a collection of extensions and functions around CGGeometry types, CGPoint, CGSize, CGRect and CGVector. It includes some other functions for FloatingPoint and Comparable types.
+CGMath is a collection of extensions and functions around CGGeometry types, `CGPoint`, `CGSize`, `CGRect` and `CGVector`. It includes some other functions for `FloatingPoint` and `Comparable` types.
 
 ### Comparable
 `clamp` is a function that takes three parameters, `value`, `min` and `max`. It will return a value that will be `min` if `value <= min`, `max` if `value >= max` and `value` in any other case.
@@ -17,7 +17,7 @@ This method can take a `progress` value outside the `[0, 1]` range, this can be 
 `inverseLerp` is the opposite of `lerp`. Given three values, `start`, `end` and a `value` (usually in the `[start, end]` range), it will return a `progress` value such that using it in `lerp` with the same `start` and `end` values, it will return `value`. For example, `lerp(start: 5, end: 15, value: 10)` will return `0.5`, since `10` is right between `5` and `15`.
 
 ### CGGeometry and DoubleListRepresentable
-The four `CGGeometry` types `CGPoint`, `CGSize`, `CGRect` and `CGVector` conform to  the protocols in `DoubleListRepresentable`. This means that they can be initialized and converted to a list of doubles. In the case of `CGRect`, this list is exactly 4 elements long, in all other cases the list should have exactly two elements.
+The four `CGGeometry` types `CGPoint`, `CGSize`, `CGRect` and `CGVector` conform to  the protocols in `DoubleListRepresentable`. This means that they can be initialized and converted to a list of doubles. In the case of `CGRect`, this list is exactly four elements long, in all other cases the list should have exactly two elements.
 
 `DoubleListRepresentable` adds the `magnitude` variable and the `normalize` and `lerp` methods, which should be quite self explanatory. It also adds four basic arithmetic functions: `+`, `-`, `*` and `/`. In the case of the multiplication and division, this is done with a scalar (`Double`) that multiplies or divides each component of the element.
 
