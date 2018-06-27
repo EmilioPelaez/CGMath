@@ -7,7 +7,7 @@
 
 import CoreGraphics
 
-public extension CGSize {
+extension CGSize {
 	public var aspectRatio: CGFloat {
 		return width / height
 	}

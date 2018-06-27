@@ -18,7 +18,7 @@ public protocol DoubleListConvertible {
 public typealias DoubleListRepresentable = ExpressibleByDoubleListLiteral & DoubleListConvertible
 
 extension DoubleListConvertible {
-	var magnitude: Double {
+	public var magnitude: Double {
 		return sqrt(doubleList.reduce(0) { $0 + $1 * $1 })
 	}
 	
@@ -30,7 +30,7 @@ extension DoubleListConvertible {
 	}
 	*/
 	
-	mutating func normalize() {
+	public mutating func normalize() {
 		let magnitude = self.magnitude
 		doubleList = doubleList.map { $0 / magnitude }
 	}
