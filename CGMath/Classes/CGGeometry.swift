@@ -7,60 +7,60 @@
 
 import CoreGraphics
 
-extension CGPoint: DoubleListRepresentable {
-	public init(doubleList: [Double]) {
-		self.init(x: doubleList[0], y: doubleList[1])
+extension CGPoint: CGFloatListRepresentable {
+	public init(floatList: [CGFloat]) {
+		self.init(x: floatList[0], y: floatList[1])
 	}
 	
-	public var doubleList: [Double] {
+	public var floatList: [CGFloat] {
 		get {
-			return [Double(x), Double(y)]
+			return [x, y]
 		}
 		set {
-			self.x = CGFloat(newValue[0])
-			self.y = CGFloat(newValue[1])
+			self.x = newValue[0]
+			self.y = newValue[1]
 		}
 	}
 }
 
-extension CGSize: DoubleListRepresentable {
-	public init(doubleList: [Double]) {
-		self.init(width: doubleList[0], height: doubleList[1])
+extension CGSize: CGFloatListRepresentable {
+	public init(floatList: [CGFloat]) {
+		self.init(width: floatList[0], height: floatList[1])
 	}
 	
-	public var doubleList: [Double] {
+	public var floatList: [CGFloat] {
 		get {
-			return [Double(width), Double(height)]
+			return [width, height]
 		}
 		set {
-			self.width = CGFloat(newValue[0])
-			self.height = CGFloat(newValue[1])
+			self.width = newValue[0]
+			self.height = newValue[1]
 		}
 	}
 }
 
-extension CGRect: DoubleListRepresentable {
-	public init(doubleList: [Double]) {
-		self.init(x: doubleList[0], y: doubleList[1], width: doubleList[2], height: doubleList[3])
+extension CGRect: CGFloatListRepresentable {
+	public init(floatList: [CGFloat]) {
+		self.init(x: floatList[0], y: floatList[1], width: floatList[2], height: floatList[3])
 	}
 	
-	public var doubleList: [Double] {
-		get { return origin.doubleList + size.doubleList }
+	public var floatList: [CGFloat] {
+		get { return origin.floatList + size.floatList }
 		set {
-			self.origin = CGPoint(doubleList: newValue)
+			self.origin = CGPoint(floatList: newValue)
 			self.size = CGSize(width: newValue[2], height: newValue[3])
 		}
 	}
 }
 
-extension CGVector: DoubleListRepresentable {
-	public init(doubleList: [Double]) {
-		self.init(dx: doubleList[0], dy: doubleList[1])
+extension CGVector: CGFloatListRepresentable {
+	public init(floatList: [CGFloat]) {
+		self.init(dx: floatList[0], dy: floatList[1])
 	}
 	
-	public var doubleList: [Double] {
+	public var floatList: [CGFloat] {
 		get {
-			return [Double(dx), Double(dy)]
+			return [dx, dy]
 		}
 		set {
 			self.dx = CGFloat(newValue[0])

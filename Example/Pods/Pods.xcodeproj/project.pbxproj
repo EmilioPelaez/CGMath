@@ -15,7 +15,7 @@
 		4AB01A94BE4E4C7A0CA4F159CE8B1201 /* Pods-CGMath_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C97E1DFA03CA6AD5DF7158C28E36445C /* Pods-CGMath_Tests-dummy.m */; };
 		748F77C39F7F8D65B51FBF470975EC9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		A29D13938CB6CC68CC50000236AF6F56 /* Pods-CGMath_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9851E7700D3840E7FBE8E62B5D67F4 /* Pods-CGMath_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C88BB0DE20E32C52009C425F /* DoubleListRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0DD20E32C52009C425F /* DoubleListRepresentable.swift */; };
+		C88BB0DE20E32C52009C425F /* CGFloatListRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0DD20E32C52009C425F /* CGFloatListRepresentable.swift */; };
 		C88BB0E020E3346A009C425F /* CGGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0DF20E3346A009C425F /* CGGeometry.swift */; };
 		C88BB0E220E33A1D009C425F /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0E120E33A1D009C425F /* FloatingPoint.swift */; };
 		C88BB0E920E33BD5009C425F /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0E720E33BD5009C425F /* Comparable.swift */; };
@@ -69,7 +69,7 @@
 		A6B10687D398F4231EADA117D5A4E681 /* Pods_CGMath_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGMath_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AD5EBBF836E789953265BB5236303 /* Pods-CGMath_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CGMath_Tests-resources.sh"; sourceTree = "<group>"; };
 		B395419837756D47FB1B5461178712FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C88BB0DD20E32C52009C425F /* DoubleListRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoubleListRepresentable.swift; path = CGMath/Classes/DoubleListRepresentable.swift; sourceTree = "<group>"; };
+		C88BB0DD20E32C52009C425F /* CGFloatListRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CGFloatListRepresentable.swift; path = CGMath/Classes/CGFloatListRepresentable.swift; sourceTree = "<group>"; };
 		C88BB0DF20E3346A009C425F /* CGGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CGGeometry.swift; path = CGMath/Classes/CGGeometry.swift; sourceTree = "<group>"; };
 		C88BB0E120E33A1D009C425F /* FloatingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FloatingPoint.swift; path = CGMath/Classes/FloatingPoint.swift; sourceTree = "<group>"; };
 		C88BB0E720E33BD5009C425F /* Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comparable.swift; path = CGMath/Classes/Comparable.swift; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 			children = (
 				C88BB0E720E33BD5009C425F /* Comparable.swift */,
 				C88BB0E120E33A1D009C425F /* FloatingPoint.swift */,
-				C88BB0DD20E32C52009C425F /* DoubleListRepresentable.swift */,
+				C88BB0DD20E32C52009C425F /* CGFloatListRepresentable.swift */,
 				C88BB0DF20E3346A009C425F /* CGGeometry.swift */,
 				C88BB0ED20E33D1B009C425F /* CGPoint.swift */,
 				C88BB0E820E33BD5009C425F /* CGSize.swift */,
@@ -374,7 +374,7 @@
 			files = (
 				C88BB0E220E33A1D009C425F /* FloatingPoint.swift in Sources */,
 				42540F3AD4AEF161F53A289CA408D16C /* CGMath-dummy.m in Sources */,
-				C88BB0DE20E32C52009C425F /* DoubleListRepresentable.swift in Sources */,
+				C88BB0DE20E32C52009C425F /* CGFloatListRepresentable.swift in Sources */,
 				C88BB0E920E33BD5009C425F /* Comparable.swift in Sources */,
 				C88BB0EE20E33D1B009C425F /* CGPoint.swift in Sources */,
 				C88BB0EA20E33BD5009C425F /* CGSize.swift in Sources */,

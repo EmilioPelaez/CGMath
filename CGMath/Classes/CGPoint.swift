@@ -16,11 +16,11 @@ extension CGPoint {
 	}
 	
 	public var asSize: CGSize {
-		return CGSize(doubleList: doubleList)
+		return CGSize(floatList: floatList)
 	}
 	
 	public var asVector: CGVector {
-		return CGVector(doubleList: doubleList)
+		return CGVector(floatList: floatList)
 	}
 	
 }
