@@ -47,6 +47,9 @@ public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: Double
 public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: Float) -> T {
 	return lerp(start: start, end: end, progress: CGFloat(progress))
 }
+public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: Int) -> T {
+	return lerp(start: start, end: end, progress: CGFloat(progress))
+}
 
 public func +<T: CGFloatListRepresentable>(lhs: T, rhs: T) -> T {
 	return T(floatList: zip(lhs.floatList, rhs.floatList).map(+))
@@ -65,6 +68,9 @@ public func *<T: CGFloatListRepresentable>(lhs: T, rhs: Double) -> T {
 public func *<T: CGFloatListRepresentable>(lhs: T, rhs: Float) -> T {
 	return lhs * CGFloat(rhs)
 }
+public func *<T: CGFloatListRepresentable>(lhs: T, rhs: Int) -> T {
+	return lhs * CGFloat(rhs)
+}
 
 public func /<T: CGFloatListRepresentable>(lhs: T, rhs: CGFloat) -> T {
 	return T(floatList: lhs.floatList.map { $0 / rhs })
@@ -73,6 +79,9 @@ public func /<T: CGFloatListRepresentable>(lhs: T, rhs: Double) -> T {
 	return lhs / CGFloat(rhs)
 }
 public func /<T: CGFloatListRepresentable>(lhs: T, rhs: Float) -> T {
+	return lhs / CGFloat(rhs)
+}
+public func /<T: CGFloatListRepresentable>(lhs: T, rhs: Int) -> T {
 	return lhs / CGFloat(rhs)
 }
 
@@ -93,6 +102,9 @@ public func *= <T: CGFloatListRepresentable>(lhs: inout T, rhs: Double) {
 public func *= <T: CGFloatListRepresentable>(lhs: inout T, rhs: Float) {
 	lhs.floatList = lhs.floatList.map { $0 * CGFloat(rhs) }
 }
+public func *= <T: CGFloatListRepresentable>(lhs: inout T, rhs: Int) {
+	lhs.floatList = lhs.floatList.map { $0 * CGFloat(rhs) }
+}
 
 public func /= <T: CGFloatListRepresentable>(lhs: inout T, rhs: CGFloat) {
 	lhs.floatList = lhs.floatList.map { $0 / rhs }
@@ -101,5 +113,8 @@ public func /= <T: CGFloatListRepresentable>(lhs: inout T, rhs: Double) {
 	lhs.floatList = lhs.floatList.map { $0 / CGFloat(rhs) }
 }
 public func /= <T: CGFloatListRepresentable>(lhs: inout T, rhs: Float) {
+	lhs.floatList = lhs.floatList.map { $0 / CGFloat(rhs) }
+}
+public func /= <T: CGFloatListRepresentable>(lhs: inout T, rhs: Int) {
 	lhs.floatList = lhs.floatList.map { $0 / CGFloat(rhs) }
 }
