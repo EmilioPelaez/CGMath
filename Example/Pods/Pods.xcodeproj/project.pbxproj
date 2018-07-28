@@ -24,6 +24,9 @@
 		C88BB0EE20E33D1B009C425F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0ED20E33D1B009C425F /* CGPoint.swift */; };
 		C88BB0F020E33DB8009C425F /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88BB0EF20E33DB8009C425F /* CGVector.swift */; };
 		C88C4BEB70E89B42E1266D9C8AA2CABF /* Pods-CGMath_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9430D656FCE5576751B15ED2348D0422 /* Pods-CGMath_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8ECF6C5210C231300D6B41F /* UIGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECF6C4210C231300D6B41F /* UIGeometry.swift */; };
+		C8ECF6CB210C23F600D6B41F /* UIOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECF6CA210C23F600D6B41F /* UIOffset.swift */; };
+		C8ECF6CD210C240300D6B41F /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ECF6CC210C240300D6B41F /* UIEdgeInsets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		C88BB0EB20E33C27009C425F /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = CGMath/Classes/CGRect.swift; sourceTree = "<group>"; };
 		C88BB0ED20E33D1B009C425F /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = CGMath/Classes/CGPoint.swift; sourceTree = "<group>"; };
 		C88BB0EF20E33DB8009C425F /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CGVector.swift; path = CGMath/Classes/CGVector.swift; sourceTree = "<group>"; };
+		C8ECF6C4210C231300D6B41F /* UIGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIGeometry.swift; path = CGMath/Classes/UIGeometry.swift; sourceTree = "<group>"; };
+		C8ECF6CA210C23F600D6B41F /* UIOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIOffset.swift; path = CGMath/Classes/UIOffset.swift; sourceTree = "<group>"; };
+		C8ECF6CC210C240300D6B41F /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIEdgeInsets.swift; path = CGMath/Classes/UIEdgeInsets.swift; sourceTree = "<group>"; };
 		C97E1DFA03CA6AD5DF7158C28E36445C /* Pods-CGMath_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CGMath_Tests-dummy.m"; sourceTree = "<group>"; };
 		CF43424AA7E853A3BC3C4C4A51668F6E /* Pods-CGMath_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGMath_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5940D9A535BE4CB24707D468D771453 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -215,6 +221,9 @@
 				C88BB0E820E33BD5009C425F /* CGSize.swift */,
 				C88BB0EB20E33C27009C425F /* CGRect.swift */,
 				C88BB0EF20E33DB8009C425F /* CGVector.swift */,
+				C8ECF6C4210C231300D6B41F /* UIGeometry.swift */,
+				C8ECF6CC210C240300D6B41F /* UIEdgeInsets.swift */,
+				C8ECF6CA210C23F600D6B41F /* UIOffset.swift */,
 				E8BB088EDA8C14E1AD7D7B622175DB29 /* Pod */,
 				180C288616EF93FD20F3BE19D51BB402 /* Support Files */,
 			);
@@ -374,13 +383,16 @@
 			files = (
 				C88BB0E220E33A1D009C425F /* FloatingPoint.swift in Sources */,
 				42540F3AD4AEF161F53A289CA408D16C /* CGMath-dummy.m in Sources */,
+				C8ECF6CD210C240300D6B41F /* UIEdgeInsets.swift in Sources */,
 				C88BB0DE20E32C52009C425F /* CGFloatListRepresentable.swift in Sources */,
 				C88BB0E920E33BD5009C425F /* Comparable.swift in Sources */,
 				C88BB0EE20E33D1B009C425F /* CGPoint.swift in Sources */,
+				C8ECF6CB210C23F600D6B41F /* UIOffset.swift in Sources */,
 				C88BB0EA20E33BD5009C425F /* CGSize.swift in Sources */,
 				C88BB0E020E3346A009C425F /* CGGeometry.swift in Sources */,
 				C88BB0EC20E33C27009C425F /* CGRect.swift in Sources */,
 				C88BB0F020E33DB8009C425F /* CGVector.swift in Sources */,
+				C8ECF6C5210C231300D6B41F /* UIGeometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

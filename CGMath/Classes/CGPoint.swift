@@ -23,4 +23,8 @@ extension CGPoint {
 		return convert()
 	}
 	
+	public var asOffset: UIOffset {
+		return convert()
+	}
+	
 }

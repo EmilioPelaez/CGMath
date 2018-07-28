@@ -5,7 +5,7 @@
 //  Created by Emilio Peláez on 26/6/18.
 //
 
-import Foundation
+import UIKit
 
 extension CGVector {
 	
@@ -20,6 +20,10 @@ extension CGVector {
 	}
 	
 	public var asPoint: CGPoint {
+		return convert()
+	}
+	
+	public var asOffset: UIOffset {
 		return convert()
 	}
 	
