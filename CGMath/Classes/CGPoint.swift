@@ -10,9 +10,8 @@ import CoreGraphics
 extension CGPoint {
 	
 	public init(direction: CGVector, magnitude: CGFloat) {
-		var direction = direction
-		direction.normalize()
-		self.init(x: direction.dx * magnitude, y: direction.dy * magnitude)
+		let normalized = direction.normalized
+		self.init(x: normalized.dx * magnitude, y: normalized.dy * magnitude)
 	}
 	
 	public var asSize: CGSize {
