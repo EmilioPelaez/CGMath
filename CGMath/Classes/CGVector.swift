@@ -16,11 +16,11 @@ extension CGVector {
 	}
 	
 	public var asSize: CGSize {
-		return CGSize(floatList: floatList)
+		return convert()
 	}
 	
 	public var asPoint: CGPoint {
-		return CGPoint(floatList: floatList)
+		return convert()
 	}
 	
 }

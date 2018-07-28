@@ -28,6 +28,26 @@ extension CGFloatListConvertible {
 		floatList = floatList.map { $0 / magnitude }
 	}
 	
+	//	These convert methods initialize another ExpressibleByCGFloatListLiteral using the floatList in the
+	//	current object. The order will be preserved so if the objects have a different amount of elements,
+	//	eg. CGSize to CGRect, you might find the results not useful. The ideal use is to convert objects of
+	//	the same dimensions.
+	//	If the receiving object doesn't handle receiving less elements than necessary to be initialized, it
+	//	might cause a crash. All default implementations handle that case properly to avoid a crash. Any missing
+	//	values will be assumed to be 0
+	
+	//	Example usage:
+	//	let point = CGSize(side: 100).convert(to: CGPoint.self)
+	public func convert<T: ExpressibleByCGFloatListLiteral>(to type: T.Type) -> T {
+		return T(floatList: floatList)
+	}
+	
+	//	Example usage:
+	//	let point: CGPoint = CGSize(side: 100).convert()
+	public func convert<T: ExpressibleByCGFloatListLiteral>() -> T {
+		return T(floatList: floatList)
+	}
+	
 }
 
 extension ExpressibleByCGFloatListLiteral where Self: CGFloatListConvertible {

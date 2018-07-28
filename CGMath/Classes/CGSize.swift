@@ -26,10 +26,10 @@ extension CGSize {
 	}
 	
 	public var asPoint: CGPoint {
-		return CGPoint(floatList: floatList)
+		return convert()
 	}
 	
 	public var asVector: CGVector {
-		return CGVector(floatList: floatList)
+		return convert()
 	}
 }
