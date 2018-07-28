@@ -51,7 +51,7 @@ extension CGFloatListConvertible {
 }
 
 extension ExpressibleByCGFloatListLiteral where Self: CGFloatListConvertible {
-	var normalized: Self {
+	public var normalized: Self {
 		let magnitude = self.magnitude
 		let array = floatList.map { $0 / magnitude }
 		return type(of: self).init(floatList: array)

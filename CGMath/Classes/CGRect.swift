@@ -7,7 +7,7 @@
 
 import CoreGraphics
 
-public extension CGRect {
+extension CGRect {
 	public var center: CGPoint {
 		return CGPoint(x: midX, y: midY)
 	}
@@ -25,35 +25,35 @@ public extension CGRect {
 		self.init(origin: origin, size: size)
 	}
 	
-	var topLeft: CGPoint {
+	public var topLeft: CGPoint {
 		return CGPoint(x: minX, y: minY)
 	}
 	
-	var topMid: CGPoint {
+	public var topMid: CGPoint {
 		return CGPoint(x: midX, y: minY)
 	}
 	
-	var topRight: CGPoint {
+	public var topRight: CGPoint {
 		return CGPoint(x: maxX, y: minY)
 	}
 	
-	var midRight: CGPoint {
+	public var midRight: CGPoint {
 		return CGPoint(x: maxX, y: midY)
 	}
 	
-	var bottomRight: CGPoint {
+	public var bottomRight: CGPoint {
 		return CGPoint(x: maxX, y: maxY)
 	}
 	
-	var bottomMid: CGPoint {
+	public var bottomMid: CGPoint {
 		return CGPoint(x: midX, y: maxY)
 	}
 	
-	var bottomLeft: CGPoint {
+	public var bottomLeft: CGPoint {
 		return CGPoint(x: minX, y: maxY)
 	}
 	
-	var midLeft: CGPoint {
+	public var midLeft: CGPoint {
 		return CGPoint(x: minX, y: midY)
 	}
 	
