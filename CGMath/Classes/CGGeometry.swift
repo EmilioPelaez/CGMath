@@ -9,6 +9,7 @@ import CoreGraphics
 
 extension CGPoint: CGFloatListRepresentable {
 	public init(floatList: [CGFloat]) {
+		let floatList = floatList + [0, 0]
 		self.init(x: floatList[0], y: floatList[1])
 	}
 	
@@ -25,6 +26,7 @@ extension CGPoint: CGFloatListRepresentable {
 
 extension CGSize: CGFloatListRepresentable {
 	public init(floatList: [CGFloat]) {
+		let floatList = floatList + [0, 0]
 		self.init(width: floatList[0], height: floatList[1])
 	}
 	
@@ -41,6 +43,7 @@ extension CGSize: CGFloatListRepresentable {
 
 extension CGRect: CGFloatListRepresentable {
 	public init(floatList: [CGFloat]) {
+		let floatList = floatList + [0, 0, 0, 0]
 		self.init(x: floatList[0], y: floatList[1], width: floatList[2], height: floatList[3])
 	}
 	
@@ -55,6 +58,7 @@ extension CGRect: CGFloatListRepresentable {
 
 extension CGVector: CGFloatListRepresentable {
 	public init(floatList: [CGFloat]) {
+		let floatList = floatList + [0, 0]
 		self.init(dx: floatList[0], dy: floatList[1])
 	}
 	
