@@ -37,7 +37,7 @@ To learn more about these functions, open the README.md file.
 	s.social_media_url = 'https://twitter.com/EmilioPelaez'
 
   s.ios.deployment_target = '9.0'
-	s.swift_version = '4.0'
+	s.swift_version = '4.2'
   s.source_files = 'CGMath/Classes/**/*'
   s.frameworks = 'CoreGraphics'
 end
