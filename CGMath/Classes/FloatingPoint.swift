@@ -16,7 +16,12 @@ public func inverseLerp<T: FloatingPoint>(start: T, end: T, value: T) -> T {
 }
 
 extension FloatingPoint {
-	public func clamp(min: Self = 0, max: Self = 1) -> Self {
+	
+	public mutating func clamp(min: Self = 0, max: Self = 1) {
+		self = clamped(min: min, max: max)
+	}
+	
+	public func clamped(min: Self = 0, max: Self = 1) -> Self {
 		return Swift.max(min, Swift.min(max, self))
 	}
 	
