@@ -5,7 +5,7 @@
 //  Created by Emilio Peláez on 27/7/18.
 //
 
-import Foundation
+import UIKit
 
 extension UIOffset {
 	
