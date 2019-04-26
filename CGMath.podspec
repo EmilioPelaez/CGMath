@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CGMath'
-  s.version          = '0.9.4'
+  s.version          = '1.0.0'
   s.summary          = 'CGMath is a collection of extensions and functions mainly around CGGeometry types, like CGPoint, CGSize, CGRect and CGVector.'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ To learn more about these functions, open the README.md file.
 	s.social_media_url = 'https://twitter.com/EmilioPelaez'
 
   s.ios.deployment_target = '9.0'
-	s.swift_version = '4.2'
+	s.swift_version = '5.0'
   s.source_files = 'CGMath/Classes/**/*'
   s.frameworks = 'CoreGraphics'
 end
