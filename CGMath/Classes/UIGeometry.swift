@@ -33,10 +33,10 @@ extension UIEdgeInsets: CGFloatListRepresentable {
 	public var floatList: [CGFloat] {
 		get { return [top, left, bottom, right] }
 		set {
-			self.top = floatList[0]
-			self.left = floatList[1]
-			self.bottom = floatList[2]
-			self.right = floatList[3]
+			self.top = newValue[0]
+			self.left = newValue[1]
+			self.bottom = newValue[2]
+			self.right = newValue[3]
 		}
 	}
 }
