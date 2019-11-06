@@ -37,7 +37,7 @@ To learn more about these functions, open the README.md file.
 	s.social_media_url = 'https://twitter.com/EmilioPelaez'
 
   s.ios.deployment_target = '9.0'
-	s.swift_version = '5.0'
+	s.swift_version = '5.1'
   s.source_files = 'Sources/**/*.swift'
   s.frameworks = 'CoreGraphics'
 end
