@@ -38,6 +38,6 @@ To learn more about these functions, open the README.md file.
 
   s.ios.deployment_target = '9.0'
 	s.swift_version = '5.0'
-  s.source_files = 'CGMath/Classes/**/*'
+  s.source_files = 'Sources/**/*.swift'
   s.frameworks = 'CoreGraphics'
 end
