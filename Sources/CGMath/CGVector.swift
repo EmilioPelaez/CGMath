@@ -16,15 +16,15 @@ extension CGVector {
 	}
 	
 	public var asSize: CGSize {
-		return convert()
+		convert()
 	}
 	
 	public var asPoint: CGPoint {
-		return convert()
+		convert()
 	}
 	
 	public var asOffset: UIOffset {
-		return convert()
+		convert()
 	}
 	
 }

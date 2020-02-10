@@ -9,7 +9,7 @@ import CoreGraphics
 
 extension CGSize {
 	public var aspectRatio: CGFloat {
-		return width / height
+		width / height
 	}
 	
 	public init(aspectRatio: CGFloat, maxSize size: CGSize) {
@@ -26,10 +26,10 @@ extension CGSize {
 	}
 	
 	public var asPoint: CGPoint {
-		return convert()
+		convert()
 	}
 	
 	public var asVector: CGVector {
-		return convert()
+		convert()
 	}
 }

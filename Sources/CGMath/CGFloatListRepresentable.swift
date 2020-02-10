@@ -20,7 +20,7 @@ public typealias CGFloatListRepresentable = ExpressibleByCGFloatListLiteral & CG
 
 extension CGFloatListConvertible {
 	public var magnitude: CGFloat {
-		return sqrt(floatList.reduce(0) { $0 + $1 * $1 })
+		sqrt(floatList.reduce(0) { $0 + $1 * $1 })
 	}
 	
 	public mutating func normalize() {
@@ -39,13 +39,13 @@ extension CGFloatListConvertible {
 	//	Example usage:
 	//	let point = CGSize(side: 100).convert(to: CGPoint.self)
 	public func convert<T: ExpressibleByCGFloatListLiteral>(to type: T.Type) -> T {
-		return T(floatList: floatList)
+		T(floatList: floatList)
 	}
 	
 	//	Example usage:
 	//	let point: CGPoint = CGSize(side: 100).convert()
 	public func convert<T: ExpressibleByCGFloatListLiteral>() -> T {
-		return T(floatList: floatList)
+		T(floatList: floatList)
 	}
 	
 }
@@ -59,50 +59,50 @@ extension ExpressibleByCGFloatListLiteral where Self: CGFloatListConvertible {
 }
 
 public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: CGFloat) -> T {
-	return T(floatList: zip(start.floatList, end.floatList).map { lerp(start: $0, end: $1, progress: progress) })
+	T(floatList: zip(start.floatList, end.floatList).map { lerp(start: $0, end: $1, progress: progress) })
 }
 public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: Double) -> T {
-	return lerp(start: start, end: end, progress: CGFloat(progress))
+	lerp(start: start, end: end, progress: CGFloat(progress))
 }
 public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: Float) -> T {
-	return lerp(start: start, end: end, progress: CGFloat(progress))
+	lerp(start: start, end: end, progress: CGFloat(progress))
 }
 public func lerp<T: CGFloatListRepresentable>(start: T, end: T, progress: Int) -> T {
-	return lerp(start: start, end: end, progress: CGFloat(progress))
+	lerp(start: start, end: end, progress: CGFloat(progress))
 }
 
 public func +<T: CGFloatListRepresentable>(lhs: T, rhs: T) -> T {
-	return T(floatList: zip(lhs.floatList, rhs.floatList).map(+))
+	T(floatList: zip(lhs.floatList, rhs.floatList).map(+))
 }
 
 public func -<T: CGFloatListRepresentable>(lhs: T, rhs: T) -> T {
-	return T(floatList: zip(lhs.floatList, rhs.floatList).map(-))
+	T(floatList: zip(lhs.floatList, rhs.floatList).map(-))
 }
 
 public func *<T: CGFloatListRepresentable>(lhs: T, rhs: CGFloat) -> T {
-	return T(floatList: lhs.floatList.map { $0 * rhs })
+	T(floatList: lhs.floatList.map { $0 * rhs })
 }
 public func *<T: CGFloatListRepresentable>(lhs: T, rhs: Double) -> T {
-	return lhs * CGFloat(rhs)
+	lhs * CGFloat(rhs)
 }
 public func *<T: CGFloatListRepresentable>(lhs: T, rhs: Float) -> T {
-	return lhs * CGFloat(rhs)
+	lhs * CGFloat(rhs)
 }
 public func *<T: CGFloatListRepresentable>(lhs: T, rhs: Int) -> T {
-	return lhs * CGFloat(rhs)
+	lhs * CGFloat(rhs)
 }
 
 public func /<T: CGFloatListRepresentable>(lhs: T, rhs: CGFloat) -> T {
-	return T(floatList: lhs.floatList.map { $0 / rhs })
+	T(floatList: lhs.floatList.map { $0 / rhs })
 }
 public func /<T: CGFloatListRepresentable>(lhs: T, rhs: Double) -> T {
-	return lhs / CGFloat(rhs)
+	lhs / CGFloat(rhs)
 }
 public func /<T: CGFloatListRepresentable>(lhs: T, rhs: Float) -> T {
-	return lhs / CGFloat(rhs)
+	lhs / CGFloat(rhs)
 }
 public func /<T: CGFloatListRepresentable>(lhs: T, rhs: Int) -> T {
-	return lhs / CGFloat(rhs)
+	lhs / CGFloat(rhs)
 }
 
 public func += <T: CGFloatListRepresentable>(lhs: inout T, rhs: T) {

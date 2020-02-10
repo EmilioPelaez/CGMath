@@ -8,11 +8,11 @@
 import Foundation
 
 public func lerp<T: FloatingPoint>(start: T, end: T, progress: T) -> T {
-	return (1 - progress) * start + progress * end
+	(1 - progress) * start + progress * end
 }
 
 public func inverseLerp<T: FloatingPoint>(start: T, end: T, value: T) -> T {
-	return (value - start) / (end - start)
+	(value - start) / (end - start)
 }
 
 extension FloatingPoint {
@@ -22,7 +22,7 @@ extension FloatingPoint {
 	}
 	
 	public func clamped(min: Self = 0, max: Self = 1) -> Self {
-		return Swift.max(min, Swift.min(max, self))
+		Swift.max(min, Swift.min(max, self))
 	}
 	
 	public func remap(from fromRange: (start: Self, end: Self), to toRange: (start: Self, end: Self)) -> Self {

@@ -15,15 +15,15 @@ extension CGPoint {
 	}
 	
 	public var asSize: CGSize {
-		return convert()
+		convert()
 	}
 	
 	public var asVector: CGVector {
-		return convert()
+		convert()
 	}
 	
 	public var asOffset: UIOffset {
-		return convert()
+		convert()
 	}
 	
 }

@@ -10,11 +10,11 @@ import UIKit
 extension UIOffset {
 	
 	public var asPoint: CGPoint {
-		return convert()
+		convert()
 	}
 	
 	public var asVector: CGVector {
-		return convert()
+		convert()
 	}
 	
 }

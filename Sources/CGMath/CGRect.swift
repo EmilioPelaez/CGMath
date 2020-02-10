@@ -9,7 +9,7 @@ import CoreGraphics
 
 extension CGRect {
 	public var center: CGPoint {
-		return CGPoint(x: midX, y: midY)
+		CGPoint(x: midX, y: midY)
 	}
 	
 	public init(center: CGPoint, size: CGSize) {
@@ -17,7 +17,7 @@ extension CGRect {
 	}
 	
 	public func withAspectRatio(_ ratio: CGFloat) -> CGRect {
-		return CGRect(center: center, size: CGSize(aspectRatio: ratio, maxSize: size))
+		CGRect(center: center, size: CGSize(aspectRatio: ratio, maxSize: size))
 	}
 	
 	public init(origin: CGPoint, center: CGPoint) {
@@ -26,35 +26,35 @@ extension CGRect {
 	}
 	
 	public var topLeft: CGPoint {
-		return CGPoint(x: minX, y: minY)
+		CGPoint(x: minX, y: minY)
 	}
 	
 	public var topMid: CGPoint {
-		return CGPoint(x: midX, y: minY)
+		CGPoint(x: midX, y: minY)
 	}
 	
 	public var topRight: CGPoint {
-		return CGPoint(x: maxX, y: minY)
+		CGPoint(x: maxX, y: minY)
 	}
 	
 	public var midRight: CGPoint {
-		return CGPoint(x: maxX, y: midY)
+		CGPoint(x: maxX, y: midY)
 	}
 	
 	public var bottomRight: CGPoint {
-		return CGPoint(x: maxX, y: maxY)
+		CGPoint(x: maxX, y: maxY)
 	}
 	
 	public var bottomMid: CGPoint {
-		return CGPoint(x: midX, y: maxY)
+		CGPoint(x: midX, y: maxY)
 	}
 	
 	public var bottomLeft: CGPoint {
-		return CGPoint(x: minX, y: maxY)
+		CGPoint(x: minX, y: maxY)
 	}
 	
 	public var midLeft: CGPoint {
-		return CGPoint(x: minX, y: midY)
+		CGPoint(x: minX, y: midY)
 	}
 	
 }

@@ -15,11 +15,11 @@ extension CGPoint: CGFloatListRepresentable {
 	
 	public var floatList: [CGFloat] {
 		get {
-			return [x, y]
+			[x, y]
 		}
 		set {
-			self.x = newValue[0]
-			self.y = newValue[1]
+			x = newValue[0]
+			y = newValue[1]
 		}
 	}
 }
@@ -32,11 +32,11 @@ extension CGSize: CGFloatListRepresentable {
 	
 	public var floatList: [CGFloat] {
 		get {
-			return [width, height]
+			[width, height]
 		}
 		set {
-			self.width = newValue[0]
-			self.height = newValue[1]
+			width = newValue[0]
+			height = newValue[1]
 		}
 	}
 }
@@ -48,10 +48,10 @@ extension CGRect: CGFloatListRepresentable {
 	}
 	
 	public var floatList: [CGFloat] {
-		get { return origin.floatList + size.floatList }
+		get { origin.floatList + size.floatList }
 		set {
-			self.origin = CGPoint(floatList: newValue)
-			self.size = CGSize(width: newValue[2], height: newValue[3])
+			origin = CGPoint(floatList: newValue)
+			size = CGSize(width: newValue[2], height: newValue[3])
 		}
 	}
 }
@@ -64,11 +64,11 @@ extension CGVector: CGFloatListRepresentable {
 	
 	public var floatList: [CGFloat] {
 		get {
-			return [dx, dy]
+			[dx, dy]
 		}
 		set {
-			self.dx = CGFloat(newValue[0])
-			self.dy = CGFloat(newValue[1])
+			dx = CGFloat(newValue[0])
+			dy = CGFloat(newValue[1])
 		}
 	}
 }

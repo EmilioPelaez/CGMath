@@ -15,11 +15,11 @@ extension UIOffset: CGFloatListRepresentable {
 	
 	public var floatList: [CGFloat] {
 		get {
-			return [horizontal, vertical]
+			[horizontal, vertical]
 		}
 		set {
-			self.horizontal = newValue[0]
-			self.vertical = newValue[1]
+			horizontal = newValue[0]
+			vertical = newValue[1]
 		}
 	}
 }
@@ -31,12 +31,12 @@ extension UIEdgeInsets: CGFloatListRepresentable {
 	}
 	
 	public var floatList: [CGFloat] {
-		get { return [top, left, bottom, right] }
+		get { [top, left, bottom, right] }
 		set {
-			self.top = newValue[0]
-			self.left = newValue[1]
-			self.bottom = newValue[2]
-			self.right = newValue[3]
+			top = newValue[0]
+			left = newValue[1]
+			bottom = newValue[2]
+			right = newValue[3]
 		}
 	}
 }

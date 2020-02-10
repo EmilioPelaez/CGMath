@@ -13,6 +13,6 @@ extension Comparable {
 	}
 	
 	public func clamped(min: Self, max: Self) -> Self {
-		return Swift.max(min, Swift.min(max, self))
+		Swift.max(min, Swift.min(max, self))
 	}
 }
