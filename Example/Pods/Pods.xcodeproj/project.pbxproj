@@ -25,6 +25,7 @@
 		C3E5A09CCAA94AED10925273A90D430E /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E32284B736E04E6C052CA74462D49 /* CGRect.swift */; };
 		C493FB2FC47381859EE5540B7607B445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8A3472FC22956C4742A38C95E2CABF /* Foundation.framework */; };
 		C4E344EFAC4A21E79D1681229FB35A32 /* Pods-CGMath_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DB2B41A3064027DA8CD834FEF04024 /* Pods-CGMath_Tests-dummy.m */; };
+		C8A0E95E23F1893A009AFB87 /* Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0E95D23F1893A009AFB87 /* Clamped.swift */; };
 		D259C876F4F02D4E63FD1F03AB784426 /* Pods-CGMath_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8801579F3FB422F13F1355620B628265 /* Pods-CGMath_Example-dummy.m */; };
 		D2AA263A6372855892EA9AB72C2FF60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8A3472FC22956C4742A38C95E2CABF /* Foundation.framework */; };
 		F444D11F89AA6949D56616A714FDD679 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E58C99BE0FA67A88892D38041F7DE3 /* CGVector.swift */; };
@@ -67,23 +68,24 @@
 		5E3DB9563F473F72F27CD4EBB6E05470 /* Pods-CGMath_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGMath_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		667E32284B736E04E6C052CA74462D49 /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = Sources/CGMath/CGRect.swift; sourceTree = "<group>"; };
 		6A12D17020CE536758A049D6180FEC7F /* CGFloatListRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatListRepresentable.swift; path = Sources/CGMath/CGFloatListRepresentable.swift; sourceTree = "<group>"; };
-		74AE9D1A1AD725C4D68DD20E5DF54B11 /* CGMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CGMath.framework; path = CGMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E0B780E2C6079161D6D550E0B8F0C2D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		74AE9D1A1AD725C4D68DD20E5DF54B11 /* CGMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0B780E2C6079161D6D550E0B8F0C2D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8801579F3FB422F13F1355620B628265 /* Pods-CGMath_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CGMath_Example-dummy.m"; sourceTree = "<group>"; };
-		8B01AE3E7BA5E9B32E258F741BB5B405 /* Pods_CGMath_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CGMath_Tests.framework; path = "Pods-CGMath_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B01AE3E7BA5E9B32E258F741BB5B405 /* Pods_CGMath_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGMath_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		942E2D5773914BC0AA8BDFF90901408F /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = Sources/CGMath/CGPoint.swift; sourceTree = "<group>"; };
 		94C624C37F835773603EDA09FE6FA361 /* CGGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGGeometry.swift; path = Sources/CGMath/CGGeometry.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1E713EFFBCE93D55BB0D83BD47494B7 /* Pods-CGMath_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CGMath_Example-Info.plist"; sourceTree = "<group>"; };
 		A275BCBAB13B98593F6F553E88280DCA /* Pods-CGMath_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGMath_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B60AD54B51079F415E01B7A53F36D382 /* Pods-CGMath_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGMath_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BAB28F566F1166E0B006460322FF89C7 /* Pods-CGMath_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CGMath_Example.modulemap"; sourceTree = "<group>"; };
 		C15CD6FFC26485AF056B7E3AF060C9EF /* Pods-CGMath_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CGMath_Tests.modulemap"; sourceTree = "<group>"; };
+		C8A0E95D23F1893A009AFB87 /* Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamped.swift; sourceTree = "<group>"; };
 		D1E58C99BE0FA67A88892D38041F7DE3 /* CGVector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGVector.swift; path = Sources/CGMath/CGVector.swift; sourceTree = "<group>"; };
 		D2737CED8F206B51521BB5827BACF1EF /* Pods-CGMath_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CGMath_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D36D66A5F13BAE199CC880B13F43B896 /* CGMath.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CGMath.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D753C66A4A0E51FB924EC2E538676F91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		DDF2A7017271F676957E157C3965142E /* Pods_CGMath_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CGMath_Example.framework; path = "Pods-CGMath_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36D66A5F13BAE199CC880B13F43B896 /* CGMath.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CGMath.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D753C66A4A0E51FB924EC2E538676F91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DDF2A7017271F676957E157C3965142E /* Pods_CGMath_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGMath_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07D5F80F5B3935D6011DF1F50CA1C90 /* Pods-CGMath_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CGMath_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E772FAF4557F4FA380A8B4E794B787EF /* Pods-CGMath_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CGMath_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E82A730CDFD2B90BAFEAB64CFF29B396 /* Comparable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comparable.swift; path = Sources/CGMath/Comparable.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				0EF67E1DFBE6B2DBEADFB8A925BCA13C /* UIOffset.swift */,
 				34D2BCCBD0B4F88E9CB1C09E32303315 /* Pod */,
 				FCCC1664AED60E162EBE271319F12D04 /* Support Files */,
+				C8A0E95D23F1893A009AFB87 /* Clamped.swift */,
 			);
 			name = CGMath;
 			path = ../..;
@@ -426,6 +429,7 @@
 				20DB8889F9F9A391398A2E1EE7E8AF56 /* FloatingPoint.swift in Sources */,
 				7698CF97D155183EDD512FEB44E02210 /* UIEdgeInsets.swift in Sources */,
 				539AF6E848B7B81BEFA4C5A70F37E992 /* UIGeometry.swift in Sources */,
+				C8A0E95E23F1893A009AFB87 /* Clamped.swift in Sources */,
 				36F6344BD56BB2A5B0A3A6E0F3620E15 /* UIOffset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,8 +639,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
