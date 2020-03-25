@@ -5,7 +5,7 @@
 //  Created by Emilio Peláez on 26/6/18.
 //
 
-import CoreGraphics
+import UIKit
 
 extension CGPoint {
 	
