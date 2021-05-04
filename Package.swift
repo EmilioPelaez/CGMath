@@ -11,6 +11,6 @@ let package = Package(
 		.library(name: "CGMath", targets: ["CGMath"])
 	],
 	targets: [
-		.target(name: "CGMath")
+		.target(name: "CGMath", path: "CGMath")
 	]
 )
