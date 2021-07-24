@@ -233,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 98F718C8264187250009DD2C /* Build configuration list for PBXProject "CGPathProj" */;
+			buildConfigurationList = 98F718C8264187250009DD2C /* Build configuration list for PBXProject "CGMath" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98F718C8264187250009DD2C /* Build configuration list for PBXProject "CGPathProj" */ = {
+		98F718C8264187250009DD2C /* Build configuration list for PBXProject "CGMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98F718D4264187250009DD2C /* Debug */,
