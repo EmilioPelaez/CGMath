@@ -25,4 +25,5 @@ public struct Clamped<Value: Comparable> {
 		get { value }
 		set { value = newValue.clamped(min: min, max: max) }
 	}
+	
 }

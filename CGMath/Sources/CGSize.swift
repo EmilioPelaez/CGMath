@@ -8,6 +8,7 @@
 import CoreGraphics
 
 extension CGSize {
+	
 	public var aspectRatio: CGFloat {
 		width / height
 	}
@@ -32,4 +33,5 @@ extension CGSize {
 	public var asVector: CGVector {
 		convert()
 	}
+	
 }
