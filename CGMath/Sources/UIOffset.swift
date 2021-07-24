@@ -5,6 +5,7 @@
 //  Created by Emilio Peláez on 27/7/18.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 extension UIOffset {
@@ -18,3 +19,5 @@ extension UIOffset {
 	}
 	
 }
+#endif
+

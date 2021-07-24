@@ -5,7 +5,10 @@
 //  Created by Emilio Peláez on 26/6/18.
 //
 
+import CoreGraphics
+#if canImport(UIKit)
 import UIKit
+#endif
 
 extension CGVector {
 	
@@ -23,8 +26,10 @@ extension CGVector {
 		convert()
 	}
 	
+	#if canImport(UIKit)
 	public var asOffset: UIOffset {
 		convert()
 	}
+	#endif
 	
 }

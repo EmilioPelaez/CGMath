@@ -5,8 +5,7 @@
 //  Created by Emilio Peláez on 26/6/18.
 //
 
-import Foundation
-import UIKit
+import CoreGraphics
 
 public protocol ExpressibleByCGFloatListLiteral {
 	init(floatList: [CGFloat])
