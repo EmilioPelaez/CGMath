@@ -1,14 +1,16 @@
-// swift-tools-version:5.1
+// swift-tools-version: 5.9
 
 import PackageDescription
 
 let package = Package(
 	name: "CGMath",
 	platforms: [
-		.iOS(.v9),
-		.macOS(.v10_15),
-		.tvOS(.v9),
-		.watchOS(.v4)
+		.iOS(.v13),
+		.macOS(.v11),
+		.macCatalyst(.v13),
+		.tvOS(.v13),
+		.watchOS(.v6),
+		.visionOS(.v1)
 	],
 	products: [
 		.library(name: "CGMath", targets: ["CGMath"])
