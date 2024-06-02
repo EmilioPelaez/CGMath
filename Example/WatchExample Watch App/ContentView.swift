@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Example
+//  WatchExample Watch App
 //
 //  Created by Emilio Peláez on 3/6/24.
 //
