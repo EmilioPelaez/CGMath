@@ -16,7 +16,7 @@
 		C8D4ADB22C0D283D00821006 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4ADB12C0D283D00821006 /* ContentView.swift */; };
 		C8D4ADB42C0D283F00821006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D4ADB32C0D283F00821006 /* Assets.xcassets */; };
 		C8D4ADB72C0D283F00821006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D4ADB62C0D283F00821006 /* Preview Assets.xcassets */; };
-		C8D4ADBA2C0D283F00821006 /* WatchExample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C8D4ADAD2C0D283D00821006 /* WatchExample Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C8D4ADBA2C0D283F00821006 /* WatchExample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C8D4ADAD2C0D283D00821006 /* WatchExample Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C8D4ADC02C0D284700821006 /* CGMath in Frameworks */ = {isa = PBXBuildFile; productRef = C8D4ADBF2C0D284700821006 /* CGMath */; };
 /* End PBXBuildFile section */
 
@@ -272,6 +272,7 @@
 /* Begin PBXTargetDependency section */
 		C8D4ADB92C0D283F00821006 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = C8D4ADAC2C0D283D00821006 /* WatchExample Watch App */;
 			targetProxy = C8D4ADB82C0D283F00821006 /* PBXContainerItemProxy */;
 		};
