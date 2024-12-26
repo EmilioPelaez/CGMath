@@ -25,24 +25,3 @@ The four `CGGeometry` types `CGPoint`, `CGSize`, `CGRect` and `CGVector` conform
 
 ### CGGeometry Extensions
 Besides the functions and variables provided by `DoubleListRepresentable`, each of the four `CGGeometry` types contains at least one convenience initializer, which should be very easy to understand, and `CGPoint`, `CGSize` and `CGVector` contain variables to transform the value from one type to any of the other two types.
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Installation
-
-CGMath is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'CGMath'
-```
-
-## Author
-
-Emilio Peláez, i.am@emiliopelaez.me
-
-## License
-
-CGMath is available under the MIT license. See the LICENSE file for more info.
