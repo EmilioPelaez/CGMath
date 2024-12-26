@@ -1,0 +1,20 @@
+name: Build Project
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-15
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Apple Platforms Action
+      uses: EmilioPelaez/build-apple-platforms@v1.0.0
+      with:
+        project: 'Example/Example.xcodeproj'
+        scheme: 'Example'
+        watch_scheme: 'WatchExample'
