@@ -2,6 +2,11 @@
 
 <img src="SocialImage.png" alt="Social Banner" width="640">
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEmilioPelaez%2FCGMath%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/EmilioPelaez/CGMath)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEmilioPelaez%2FCGMath%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/EmilioPelaez/CGMath)
+
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
+
 A collection of extensions and functions around CGGeometry types, `CGPoint`, `CGSize`, `CGRect` and `CGVector`. It includes some other functions for `FloatingPoint` and `Comparable` types.
 
 ## Comparable
